@@ -39,6 +39,28 @@ export default function Home() {
             <Image src="/hexagon-distribution.svg" alt="Hexagon distribution chart" width={600} height={600} className="w-full h-auto" />
           </div>
         </main>
+        <section className="bg-gray-50 py-12">
+          <div className="max-w-7xl mx-auto px-6">
+            <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8">{t("How it works")}</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="flex flex-col items-center text-center">
+                <Image src="/file.svg" alt="Step 1 icon" width={64} height={64} className="mb-4" />
+                <h3 className="text-xl font-semibold">{t("Step 1: Take the test")}</h3>
+                <p className="mt-2 text-gray-600">{t("Answer a few questions to assess your idea expression style.")}</p>
+              </div>
+              <div className="flex flex-col items-center text-center">
+                <Image src="/globe.svg" alt="Step 2 icon" width={64} height={64} className="mb-4" />
+                <h3 className="text-xl font-semibold">{t("Step 2: View your results")}</h3>
+                <p className="mt-2 text-gray-600">{t("Get a personalized report to understand your communication strengths.")}</p>
+              </div>
+              <div className="flex flex-col items-center text-center">
+                <Image src="/window.svg" alt="Step 3 icon" width={64} height={64} className="mb-4" />
+                <h3 className="text-xl font-semibold">{t("Step 3: Level up")}</h3>
+                <p className="mt-2 text-gray-600">{t("Use targeted tips to improve how you share ideas.")}</p>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </ClientOnly>
   );
